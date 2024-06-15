@@ -1,7 +1,7 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
 from typing import Optional
 from pydantic import BaseModel
-from services.databaseService import ExecuteQuery
+from ..services.databaseService import ExecuteQuery
 
 class DbConnection(BaseModel):
     engine: str
